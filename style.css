@@ -1,0 +1,578 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: black;
+}
+
+.nav-bar {
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(5, 5, 5);
+}
+
+.up-nav {
+  background-color: white;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  width: 80px;
+  background-color: black;
+  border: 2px solid black;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.logo img {
+  height: 37px;
+  width: 65px;
+  border-radius: 8px;
+}
+
+.cm-name {
+  height: 45px;
+  width: 400px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-nav {
+  background-color: white;
+}
+
+.book-met {
+  height: 45px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-nav {
+  display: flex;
+  background-color: black;
+  height: 55px;
+  align-items: center;
+}
+
+.Menu {
+  background-color: white;
+  color: black;
+  height: 45px;
+  width: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 4px solid black;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.fa-bars {
+  margin-right: 8px;
+}
+
+.contact-us {
+  background-color: white;
+  color: black;
+  height: 45px;
+  width: 120px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 4px solid black;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.feedback {
+  background-color: white;
+  color: black;
+  height: 45px;
+  width: 90px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 4px solid black;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.menu-box {
+  margin-left: 73px;
+  height: fit-content;
+  width: fit-content;
+  position: fixed;
+  z-index: 100;
+  /* left: 0%; */
+  top: 100px;
+  background-color: white;
+  border-radius: 12px;
+  display: none;
+}
+
+.menu-box div {
+  width: 585px;
+  background-color: white;
+  height: 50px;
+  color: rgb(16, 15, 15);
+  font-size: larger;
+
+  display: flex;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 15px;
+  border-bottom: 4px solid black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+#wallpaper {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.back {
+  position: relative;
+}
+
+.written {
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: White;
+}
+
+.written h1 {
+    
+  position: relative;
+  width: fit-content;
+  padding: 5px;
+  font-size: 4rem;
+}
+
+.written h1::after {
+  position: absolute;
+  color: rgb(213, 213, 77);
+  left: 0.3%;
+
+  content: "Guiding You To Hidden Gem";
+}
+
+.Deal-box h1 {
+  text-shadow: 0px 0px 4px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+.deals {
+  width: 100%;
+  background-color: black;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.eu-deal {
+  height: 350px;
+  width: 250px;
+  /* margin-left: 45px; */
+  border-radius: 15px;
+  overflow: hidden;
+  /* transition: all 3.5s; */
+  position: relative;
+}
+
+.card-text h3 {
+  color: white;
+}
+
+.deals div img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-text {
+  transition: all 1s ease-in-out;
+  position: absolute;
+  /* background-color: white; */
+  background-color: rgba(0, 0, 0, 0.5);
+
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 85%;
+  z-index: 10;
+}
+
+.deals div h1 {
+  display: flex;
+  align-items: center;
+}
+
+.deals div p {
+  display: none;
+}
+
+.deals div:hover .card-text {
+  position: absolute;
+  /* transition: all 3.5s; */
+  top: 0%;
+}
+
+.deals div:hover p {
+  display: block;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.our-experiance {
+  height: fit-content;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.heading-box {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heading-box h1 {
+  color: rgb(15, 15, 15);
+  background-color: white;
+  height: fit-content;
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 8px;
+  margin-right: 30px;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  margin-right: 35px;
+  border-radius: 12px;
+}
+
+.upper-card {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.lower-card {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.centre-bal {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  top: 272px;
+  right: 47.5%;
+}
+
+.centre-bal img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card-writin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-writin:hover .writtin-data {
+  display: flex;
+}
+
+.writtin-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 18px; 
+}
+
+.writtin-data {
+  font-size: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-area {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(10, 9, 9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-heading {
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos-section {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  color: black;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.video {
+  height: 270px;
+  width: 250px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.video img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.video:hover img {
+  transform: scale(1.6);
+}
+
+.video p {
+  margin-top: 15px;
+  padding-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+  height: fit-content;
+  width: fit-content;
+  background-color: black;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  height: 50px;
+  width: 280px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  margin-bottom: 50px;
+  &:hover {
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+  }
+}
+
+.footer {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.footer-infobox {
+  margin-top: 20px;
+  height: 200px;
+  width: 350px;
+  background-color: rgb(11, 10, 10);
+
+  color: white;
+}
+
+.footer-infobox h3 {
+  margin: 10px;
+}
+
+.footer-infobox p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-infobox button {
+  border-radius: 10px;
+  height: 18px;
+  font-size: 13px;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+.line1 {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+}
+
+.last-line {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 45px;
+  width: 350px;
+  background-color: rgb(15, 13, 13);
+}
+
+.box button {
+  border-radius: 6px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.fa-brands {
+  margin: 5px;
+}
+
+.fa-facebook {
+  color: white;
+  &:hover {
+    color: blue;
+  }
+}
+
+.fa-instagram {
+  color: white;
+  &:hover {
+    background: rgb(63, 94, 251);
+  }
+}
+
+.fa-youtube {
+  color: white;
+  &:hover {
+    color: rgb(255, 0, 0);
+  }
+}
+
+  @media only screen and (max-width:580px) {
+    #video2{
+        display: none;
+    }
+    
+  }
+
+  @media only screen and ( max-width: 851px){
+    #video1 {
+        display: none;
+    }
+.written h1{
+    font-size: 2.5rem;
+}
+    
+  }
+
+  @media only screen and (max-width:521px){
+    .written h1{
+        font-size: 2rem;}
+        .written h1::after{
+          left: 0.1%;  
+        }
+    
+  }
+
+  @media only screen and (max-width:412px){
+    .written h1{
+        font-size: 1.5rem;}
+        .written h1::after{
+            display: none;
+        }
+    
+    }
