@@ -1,10 +1,11 @@
 * {
   margin: 0%;
   padding: 0%;
+  
 }
 
 body {
-  background-color: black;
+  background-color: red;
 }
 
 .nav-bar {
@@ -62,6 +63,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
+}
+
+.book-met p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+ 
 }
 
 .bottom-nav {
@@ -129,7 +138,6 @@ body {
   width: fit-content;
   position: fixed;
   z-index: 100;
-  /* left: 0%; */
   top: 100px;
   background-color: white;
   border-radius: 12px;
@@ -142,7 +150,6 @@ body {
   height: 50px;
   color: rgb(16, 15, 15);
   font-size: larger;
-
   display: flex;
   align-items: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -212,16 +219,18 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+ 
+ 
 }
 
 .eu-deal {
   height: 350px;
   width: 250px;
-  /* margin-left: 45px; */
+  margin-top: 25px;
   border-radius: 15px;
   overflow: hidden;
-  /* transition: all 3.5s; */
   position: relative;
+  border: 2px solid white;
 }
 
 .card-text h3 {
@@ -275,6 +284,7 @@ hr {
   width: 100%;
   background-color: black;
   position: relative;
+  
 }
 
 .heading-box {
@@ -307,7 +317,9 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 35px;
+  margin-left: 10px;
 }
 
 .lower-card {
@@ -316,6 +328,8 @@ hr {
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .centre-bal {
@@ -326,7 +340,7 @@ hr {
   position: absolute;
   z-index: 10;
   top: 272px;
-  right: 47.5%;
+  right: 47%;
 }
 
 .centre-bal img {
@@ -462,22 +476,15 @@ hr {
 }
 
 .footer-infobox {
-  margin-top: 20px;
+  margin-left: 10px;
   height: 200px;
-  width: 350px;
+  width: 200px;
   background-color: rgb(11, 10, 10);
 
   color: white;
 }
 
-.footer-infobox h3 {
-  margin: 10px;
-}
 
-.footer-infobox p {
-  margin-top: 10px;
-  margin-left: 10px;
-}
 
 .footer-infobox button {
   border-radius: 10px;
@@ -493,6 +500,7 @@ hr {
   height: fit-content;
   width: 100%;
   display: flex;
+  margin-top: 15px;
 }
 
 .last-line {
@@ -505,7 +513,7 @@ hr {
 
 .box {
   height: 45px;
-  width: 350px;
+  width: 100%;
   background-color: rgb(15, 13, 13);
 }
 
@@ -546,6 +554,9 @@ hr {
     #video2{
         display: none;
     }
+    .menu-box div{
+      width: 315px;
+    }
     
   }
 
@@ -565,14 +576,25 @@ hr {
         .written h1::after{
           left: 0.1%;  
         }
-    
+        .centre-bal {
+          right: 39%;
+        }
+  
   }
 
   @media only screen and (max-width:412px){
     .written h1{
         font-size: 1.5rem;}
-        .written h1::after{
-            display: none;
-        }
+     .written h1::after{
+            display: none;}
+     .book-met p {
+       font-weight: 1px
+     }  
+     .menu-box div{
+      width: 200px;
+    }
+    .writtin-heading {
+      font-size: 10px;
+    }
     
     }
